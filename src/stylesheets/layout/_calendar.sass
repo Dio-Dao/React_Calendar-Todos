@@ -1,0 +1,31 @@
+.calendar
+    &__month
+        margin: 15px 0
+        position: relative
+    &__year,&__month,&__cells,&__cell,&__day
+        text-align: center
+    &__cell,&__day
+        background-color: #fff
+    &__days-in-week,&__cells
+        display: grid
+        grid-gap: 1px
+        grid-template-columns: repeat(7, 1fr)
+        background-color: gray
+        border: 1px solid gray
+    &__days-in-week
+        border-bottom: none
+    &__cell
+        padding-top: 5px
+        height: 135px
+        background-color: #fff
+        position: relative
+        overflow: auto
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        &-notCurrentMonth
+            padding-top: 5px
+            height: 135px
+            background-color: #fff
+            position: relative
+            color: lightgray
